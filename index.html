@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
     
 </head>
@@ -11,18 +15,17 @@
 
     <header>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="name">Filminity</li>
+            <li class="list">CARTELERA</li>
+            <li class="list">CINES</li>
+            <li class="list">CRITICAS</li>
         </ul>
     </header>
 
 
 
     <h1 id="h1Index">Desafio Entregable - Clase #4</h1>
-    <br>
-    <br>
-    <br>
+
 
     <select id="eleccion" onchange="opcion()">
 
@@ -30,80 +33,118 @@
 
     <h2 id="peliculaElegida">Pelicula Elegida</h2>
 
-    <section class="infoPelicula">
-        <img src="" alt="">
-        <div class="descripcion">
-            <p></p>
-            <p></p>
+    <section>
+        <div  class="infoPelicula">
+            <img class="imgPelicula" src="https://dummyimage.com/250x350/000/fff" alt="">
+
+            <div >
+                <p class="descripTitle">Descripción:</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quis aperiam commodi voluptate nihil iste quos dolore quam quas ipsam, blanditiis consectetur est. Eos, saepe eligendi unde porro corrupti temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ipsa mollitia ut, laboriosam earum nemo exercitationem numquam sint eligendi repudiandae natus sed, voluptatem aliquam perferendis qui illum eaque blanditiis iusto.
+                </p>
+            </div>
         </div>
-        <iframe src="" frameborder="0"></iframe>
     </section>
 
     <section class="eleccionCinePeliculaDia">
-        <input class="cineElegido">
-        <input class="peliculaElegida">
 
-        <div class="diaELegido">
-            <input class="diaLunes">
-            <input class="diaMartes">
-            <input class="diaMiercoles">
-            <input class="diaJueves">
-            <input class="diaViernes">
-            <input class="diaSabado">
-            <input class="diaDomingo">
+        <select id="cineElegido">
+            <option value="">CINE ELEGIDO</option>
+        </select>
+
+        <select id="peliElegida">
+            <option value="">PELICULA ELEGIDA</option>
+        </select>
+
+
+        <div class="diaElegido">
+
+            <button class="diaLunes">LUN</button>
+
+            <button class="diaMartes">MAR</button>
+
+            <button class="diaMiercoles">MIE</button>
+
+            <button class="diaJueves">JUE</button>
+
+            <button class="diaViernes">VIE</button>
+
+            <button class="diaSabado">SAB</button>
+
+            <button class="diaDomingo">DOM</button>
+
         </div>
         
     </section>
 
-    <section class="eleccionVersion">
+    <section>
+        <div  class="eleccionVersion">
+            <div class="cast">
+                
+                <h3>2D CASTELLANO</h3>
+                
+                <div class="horario">
+                    <button>13:00</button>
+                    <button>19:00</button>
+                </div>
 
-        <div>
-            <h3></h3>
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
+            </div>
+
+            <div class="sub">
+
+                <h3>2D SUBTITULADO</h3>
+
+                <div class="horario">
+                    <button>14:15</button>
+                    <button>20:00</button>
+                    <button>22:00</button>
+                </div>    
+            </div>
+            
+
+            <div class="sub-3">
+
+                <h3>3D SUBTITULADO</h3>
+
+                <div class="horario">
+                    <button>19:00</button>
+                </div>
+            </div>
+
         </div>
+        </section>
 
-        <div>
-            <h3></h3>
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-        </div>
 
-        <div>
-            <h3></h3>
-            <input type="text" name="" id="">
-        </div>
 
-    </section>
 
-    <section class="eleccionAsientos">
-        <p></p>
-        <img src="" alt="">
 
-    </section>
-
-    <section class="eleccionProductos">
-
-        <p></p>
-
-        <div class="productoPochoclo">
-            <img src="" alt="">
-            <input type="text">
+        <section class="eleccionAsientos">
             <p></p>
-        </div>
-
-        <div class="productoGaseosa">
             <img src="" alt="">
-            <input type="text">
-            <p></p>
-        </div>
 
-        <div class="productoCombo">
-            <img src="" alt="">
-            <input type="text">
+        </section>
+
+        <section class="eleccionProductos">
+
             <p></p>
-        </div>
+
+            <div class="productoPochoclo">
+                <img src="" alt="">
+                <input type="text">
+                <p></p>
+            </div>
+
+            <div class="productoGaseosa">
+                <img src="" alt="">
+                <input type="text">
+                <p></p>
+            </div>
+
+            <div class="productoCombo">
+                <img src="" alt="">
+                <input type="text">
+                <p></p>
+            </div>
+    </div>
 
     </section>
 
